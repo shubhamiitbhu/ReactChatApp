@@ -1,0 +1,151 @@
+body
+{
+  text-align: center;
+
+}
+
+button
+{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #3f51b5;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  
+  box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.initialise #box
+{
+  width: 38%;
+  height:100%;
+  border:1px solid white;
+  margin-left: 31%;
+  margin-top: 10%;
+  margin-right: auto;
+  box-shadow:  0 0 10px  rgba(0,0,0,0.6);
+      -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+      -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+      -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+  border-radius: 10px;
+  text-align:center;
+  display: block;
+}
+
+.initialise #contentwrap
+{
+  display: none;
+  margin-top: 2%;
+}
+
+.block #header
+{
+  width:60.1%;
+  height:70px;
+  background-color: #3f51b5;
+  margin-left: 20%;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.block #output
+{
+  
+  height:550px ;
+  width: 60%;
+  background-color: white;
+  margin-left: 20%;
+
+  
+  border: 1px solid #A9A9A9;
+  box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow-x: hidden;
+  overflow-y: auto;
+  
+   
+
+}
+
+
+.InputMessage input
+{
+  margin-left:1%;
+  display: inline-block;
+  width:55%;
+  height: 50px;
+  
+}
+
+.InputMessage button
+{
+
+  height:61px;
+  margin-left:0%;
+}
+
+.block #welcome
+{
+  color: white;
+  font-size: 30px;
+  font-family: 'Inconsolata', monospace;
+}
+.initialise #welcome-text
+{
+  color:#3f51b5;
+  font-family: 'Coiny', cursive;
+  font-size: 40px;
+  padding-top: 100px;
+}
+
+.initialise #username
+{
+  font-family: 'Coiny', cursive;
+  font-size: 20px;
+  color: grey;
+}
+
+.initialise #text-line {
+    background-color: white;
+    color: Black;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #C0C0C0 1px;
+    padding: 3px 10px;
+font-family:'Inconsolata', monospace;
+font-size:15px;
+width: 250px;
+text-align: center;
+}
+
+
+
+.block #bubble
+{
+  margin-top:10px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  padding-top: 0px;
+  font-size: 17px;
+  padding-bottom: 25px;
+  margin-left:5%;
+  margin-right: 10%;
+  border-radius:20px 50px;
+  word-wrap: break-word;
+box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.block strong
+{
+  color: #B22222;
+}
