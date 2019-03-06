@@ -1,22 +1,35 @@
 var express = require('express');
 var socket = require('socket.io');
-var path=require('path');
+const path = require('path');
+const port = process.env.PORT || 5000;
 var app = express();
 
-app.use(express.static(path.join(__dirname, 'Client' , 'build')));
 
-app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, 'Client', 'build', 'index.html'));
+
+
+if(process.env.NODE_ENV == 'production')
+{
+	app.use(express.static('build'));
+	app.get('*', (req,res) => {
+		res.sendFile(path.resolve(__dirname , 'build' , 'index.html'));
+	});
+}
+else
+{
+	app.use(express.static(path.join(__dirname, 'build')));
+	app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
+}
 
-server = app.listen(process.env.PORT || 5000, function(){
+var server = app.listen(port, function(){
     console.log('server is running on port 5000')
 });
 
 
 
-io = socket(server);
+var io = socket(server);
 
 io.on('connection', (socket) => {
     console.log(socket.id);
